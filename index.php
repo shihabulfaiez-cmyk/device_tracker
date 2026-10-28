@@ -1,90 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex IT Services</title>
-    <!-- Bootstrap 5 CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+<?php
+require_once 'includes/header.php';
+?>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">Apex IT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <!-- Login Dropdown / Link -->
-                    <li class="nav-item dropdown ms-lg-3">
-                        <a class="nav-link dropdown-toggle btn btn-outline-light text-dark px-3" href="#" role="button" data-bs-toggle="dropdown">
-                            Account
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="login.php">User Login</a></li>
-                        </ul>
-                    </li>
-                </ul>
+<!-- Hero Section -->
+<section class="py-5 text-center text-white position-relative" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+  <div class="container py-4">
+    <h1 class="display-4 fw-bold mb-3">Manage Your IT Assets Effortlessly</h1>
+    <p class="lead mb-4 mx-auto" style="max-width: 600px;">
+      A streamlined platform to register, track, and manage all organization hardware and devices in real time.
+    </p>
+  </div>
+</section>
+
+<!-- Services / Features Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Key Features</h2>
+      <p class="text-muted">Everything you need to control your hardware inventory</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-3 text-center service-card">
+          <div class="card-body">
+            <div class="text-primary fs-1 mb-3">
+              <i class="bi bi-cpu-fill" aria-hidden="true"></i>
             </div>
+            <h5 class="card-title fw-semibold">Device Tracking</h5>
+            <p class="card-text text-muted">Keep a complete log of all laptops, desktops, and peripherals assigned across teams.</p>
+          </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container py-5">
-            <h1 class="display-4 fw-bold">Enterprise IT Infrastructure Services</h1>
-            <p class="lead mb-4">Secure, scalable, and reliable network management solutions for modern businesses.</p>
-            <a href="login.php" class="btn btn-light btn-lg text-primary fw-semibold px-4">Access Device Tracker</a>
-        </div>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Our Core Services</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h4 class="card-title text-primary">Network Architecture</h4>
-                            <p class="card-text">Design and deployment of robust core routing, switching, and secure wireless environments.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h4 class="card-title text-primary">Device Tracking & Monitoring</h4>
-                            <p class="card-text">Real-time tracking of hardware assets, IP management, and automated status diagnostics.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h4 class="card-title text-primary">Cloud & Security</h4>
-                            <p class="card-text">Comprehensive perimeter protection, firewall management, and seamless hybrid cloud integration.</p>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-3 text-center service-card">
+          <div class="card-body">
+            <div class="text-primary fs-1 mb-3">
+              <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
             </div>
+            <h5 class="card-title fw-semibold">Role-Based Access</h5>
+            <p class="card-text text-muted">Granular permissions ensuring security for standard users and super admins alike.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-1">&copy; 2026 Apex IT Services. All rights reserved.</p>
-            <small class="text-muted"><a href="login.php" class="text-decoration-none text-muted">Admin Portal</a></small>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-3 text-center service-card">
+          <div class="card-body">
+            <div class="text-primary fs-1 mb-3">
+              <i class="bi bi-bar-chart-line-fill" aria-hidden="true"></i>
+            </div>
+            <h5 class="card-title fw-semibold">Instant Reports</h5>
+            <p class="card-text text-muted">Filter and locate active or unassigned devices with speed and accuracy.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Bootstrap JS Bundle CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<!-- Testimonials Carousel -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">What Users Say</h2>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 700px;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner text-center p-4">
+        <div class="carousel-item active">
+          <p class="fs-5 italic text-secondary">"The IT Device Tracker simplified our entire auditing process. Super clean and fast!"</p>
+          <h6 class="fw-bold mt-3 mb-0">Sarah Jenkins</h6>
+          <small class="text-muted">IT Operations Lead</small>
+        </div>
+        <div class="carousel-item">
+          <p class="fs-5 italic text-secondary">"Role permissions ensure that team leads only manage devices assigned specifically to them."</p>
+          <h6 class="fw-bold mt-3 mb-0">David Miller</h6>
+          <small class="text-muted">Systems Administrator</small>
+        </div>
+        <div class="carousel-item">
+          <p class="fs-5 italic text-secondary">"Adding devices and maintaining records has never been this simple."</p>
+          <h6 class="fw-bold mt-3 mb-0">Anita Rao</h6>
+          <small class="text-muted">Network Engineer</small>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<?php
+require_once 'includes/footer.php';
+?>
